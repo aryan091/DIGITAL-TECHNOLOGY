@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>ML/DL Models</title>
+</head>
+
+<body>
+      <!-- Starting Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/index.html">DIGITAL TECHNOLOGY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/continue_reading_deeplearning.html">Deep Learning</a>
+                        <a class="dropdown-item" href="/continue_reading_machinelearning.html">Machine Learning</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/continue_reading_python.html">Python</a>
+                        <a class="dropdown-item" href="/continue_reading_blog.html">Blog</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to ICoder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an ICoder Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1"> Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ending Navbar -->
+
+    <!-- Dismissable Alerts -->
+
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>ML/DL</strong> Models code available here!!.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+    <!-- Dismissable Alerts End -->
+
+    <div class="container my-4">
+        <h2>Naive Bayes Classifier:<hr></h2>
+        <strong>Spam Email Classifier using Naive Bayes Algorithm</strong>
+        <form>
+            <div class="form-group">
+                <textarea class="form-control" id="myInput" rows="60" >
+                    #LIBRARIES IMPORT
+
+                    import pandas as pd
+                    import numpy as np
+                    import matplotlib.pyplot as plt
+                    import seaborn as sns
+                    %matplotlib inline
+
+                    #IMPORT DATASET
+                    spam_df = pd.read_csv("emails.csv")
+                    spam_df.head(10)
+                    spam_df.tail()
+                    spam_df.describe()
+                    spam_df.info()
+
+                    #VISUALIZE DATASET
+                    # Let's see which message is the most popular ham/spam message
+                    spam_df.groupby('spam').describe()
+
+                    # Let's get the length of the messages
+                    spam_df['length'] = spam_df['text'].apply(len)
+                    spam_df.head()
+                    spam_df['length'].plot(bins=100, kind='hist')
+                    spam_df.length.describe()
+
+                    # Let's see the longest message 43952
+                    spam_df[spam_df['length'] == 43952]['text'].iloc[0]
+                    # Let's divide the messages into spam and ham
+                    ham = spam_df[spam_df['spam']==0]
+                    spam = spam_df[spam_df['spam']==1]
+                    ham
+                    spam
+                    spam['length'].plot(bins=60, kind='hist')
+                    ham['length'].plot(bins=60, kind='hist')
+                    print( 'Spam percentage =', (len(spam) / len(spam_df) )*100,"%")
+                    print( 'Ham percentage =', (len(ham) / len(spam_df) )*100,"%")
+                    sns.countplot(spam_df['spam'], label = "Count")
+
+                    #CREATE TESTING AND TRAINING DATASET/DATA CLEANING
+                    #EXERCISE: REMOVE PUNCTUATION
+                    import string
+                    string.punctuation
+                    Test = 'Hello Mr. Future, I am so happy to be learning AI now!!'
+                    Test_punc_removed = [char for char in Test if char not in string.punctuation]
+                    Test_punc_removed
+                    # Join the characters again to form the string.
+                    Test_punc_removed_join = ''.join(Test_punc_removed)
+                    Test_punc_removed_join
+
+                    #EXERCISE: REMOVE STOPWORDS
+                    # You have to download stopwords Package to execute this command
+                    from nltk.corpus import stopwords
+                    stopwords.words('english')
+                    Test_punc_removed_join
+                    Test_punc_removed_join_clean = [word for word in Test_punc_removed_join.split() if word.lower() not in stopwords.words('english')]
+                    Test_punc_removed_join_clean # Only important (no so common) words are left
+
+                    #EXERCISE: COUNT VECTORIZER EXAMPLE
+                    from sklearn.feature_extraction.text import CountVectorizer
+                    sample_data = ['This is the first document.','This document is the second document.','And this is the third one.','Is this the first document?']
+
+                    vectorizer = CountVectorizer()
+                    X = vectorizer.fit_transform(sample_data)
+                    print(vectorizer.get_feature_names())
+                    print(X.toarray())
+
+                    #LET'S APPLY THE PREVIOUS THREE PROCESSES TO OUR SPAM/HAM EXAMPLE
+                    # Let's define a pipeline to clean up all the messages
+                    # The pipeline performs the following: (1) remove punctuation, (2) remove stopwords
+
+                    def message_cleaning(message):
+                        Test_punc_removed = [char for char in message if char not in string.punctuation]
+                        Test_punc_removed_join = ''.join(Test_punc_removed)
+                        Test_punc_removed_join_clean = [word for word in Test_punc_removed_join.split() if word.lower() not in stopwords.words('english')]
+                        return Test_punc_removed_join_clean
+                    # Let's test the newly added function
+                    spam_df_clean = spam_df['text'].apply(message_cleaning)
+                    print(spam_df_clean[0])
+                    print(spam_df['text'][0])
+
+                    #LET'S APPLY COUNT VECTORIZER TO OUR MESSAGES LIST
+                    from sklearn.feature_extraction.text import CountVectorizer
+                    # Define the cleaning pipeline we defined earlier
+                    vectorizer = CountVectorizer(analyzer = message_cleaning)
+                    spamham_countvectorizer = vectorizer.fit_transform(spam_df['text'])
+                    print(vectorizer.get_feature_names())
+                    print(spamham_countvectorizer.toarray())
+                    spamham_countvectorizer.shape
+
+                    #TRAINING THE MODEL WITH ALL DATASET
+                    from sklearn.naive_bayes import MultinomialNB
+
+                    NB_classifier = MultinomialNB()
+                    label = spam_df['spam'].values
+                    NB_classifier.fit(spamham_countvectorizer, label)
+
+                    testing_sample = ['Free money!!!', "Hi Kim, Please let me know if you need any further information. Thanks"]
+                    testing_sample_countvectorizer = vectorizer.transform(testing_sample)
+
+                    test_predict = NB_classifier.predict(testing_sample_countvectorizer)
+                    test_predict
+                    testing_sample = ['Hello, I am Ryan, I would like to book a hotel in Bali by January 24th', 'money viagara!!!!!']
+
+                    testing_sample = ['money viagara!!!!!', "Hello, I am Ryan, I would like to book a hotel in SF by January 24th"]
+                    testing_sample_countvectorizer = vectorizer.transform(testing_sample)
+                    test_predict = NB_classifier.predict(testing_sample_countvectorizer)
+                    test_predict
+
+                    #DIVIDE THE DATA INTO TRAINING AND TESTING PRIOR TO TRAINING
+                    X = spamham_countvectorizer
+                    y = label
+                    X.shape
+                    y.shape
+                    from sklearn.model_selection import train_test_split
+                    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+                    from sklearn.naive_bayes import MultinomialNB
+                    NB_classifier = MultinomialNB()
+                    NB_classifier.fit(X_train, y_train)
+
+                    #EVALUATING THE MODEL
+                    from sklearn.metrics import classification_report, confusion_matrix
+
+                    y_predict_train = NB_classifier.predict(X_train)
+                    y_predict_train
+                    cm = confusion_matrix(y_train, y_predict_train)
+                    sns.heatmap(cm, annot=True)
+
+                    # Predicting the Test set results
+                    y_predict_test = NB_classifier.predict(X_test)
+                    cm = confusion_matrix(y_test, y_predict_test)
+                    sns.heatmap(cm, annot=True)
+                    print(classification_report(y_test, y_predict_test))
+
+                    #LET'S ADD ADDITIONAL FEATURE TF-IDF
+                    spamham_countvectorizer
+                    from sklearn.feature_extraction.text import TfidfTransformer
+
+                    emails_tfidf = TfidfTransformer().fit_transform(spamham_countvectorizer)
+                    print(emails_tfidf.shape)
+                    print(emails_tfidf[:,:])
+                    # Sparse matrix with all the values of IF-IDF
+                    X = emails_tfidf
+                    y = label
+
+                    from sklearn.model_selection import train_test_split
+                    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+                    from sklearn.naive_bayes import MultinomialNB
+                    NB_classifier = MultinomialNB()
+                    NB_classifier.fit(X_train, y_train)
+
+                    from sklearn.metrics import classification_report, confusion_matrix
+                    y_predict_train = NB_classifier.predict(X_train)
+                    y_predict_train
+                    cm = confusion_matrix(y_train, y_predict_train)
+                    sns.heatmap(cm, annot=True)
+                    print(classification_report(y_test, y_predict_test))
+
+                </textarea>
+            </div>
+            <button onclick="myFunction()">Copy Code</button>
+            <strong>Code compatibility: Jupyter Notebook</strong>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+
+}
+</script>
+        </form>
+</div>
+
+
+    <!-- Footer Starts Here -->
+
+    <div class="container my-4">
+
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2020-2021 ICoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
+    </div>
+    <!-- Footer Ends Here -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
